@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\Linear Algebra\obj\Debug\netcoreapp3.1\Linear Algebra.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Linear Algebra\obj\Debug\netcoreapp3.1\Linear Algebra.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Linear Algebra\obj\Debug\netcoreapp3.1\Linear Algebra.AssemblyInfo.cs
+C:\Users\User\source\repos\Linear Algebra\obj\Debug\netcoreapp3.1\Linear Algebra.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Linear Algebra\bin\Debug\netcoreapp3.1\Linear Algebra.exe
+C:\Users\User\source\repos\Linear Algebra\bin\Debug\netcoreapp3.1\Linear Algebra.deps.json
+C:\Users\User\source\repos\Linear Algebra\bin\Debug\netcoreapp3.1\Linear Algebra.runtimeconfig.json
+C:\Users\User\source\repos\Linear Algebra\bin\Debug\netcoreapp3.1\Linear Algebra.runtimeconfig.dev.json
+C:\Users\User\source\repos\Linear Algebra\bin\Debug\netcoreapp3.1\Linear Algebra.dll
+C:\Users\User\source\repos\Linear Algebra\bin\Debug\netcoreapp3.1\Linear Algebra.pdb
+C:\Users\User\source\repos\Linear Algebra\obj\Debug\netcoreapp3.1\Linear Algebra.dll
+C:\Users\User\source\repos\Linear Algebra\obj\Debug\netcoreapp3.1\Linear Algebra.pdb
+C:\Users\User\source\repos\Linear Algebra\obj\Debug\netcoreapp3.1\Linear Algebra.genruntimeconfig.cache
