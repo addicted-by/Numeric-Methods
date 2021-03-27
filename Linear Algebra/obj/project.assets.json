@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Linear Algebra\\Linear Algebra.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Numeric-Methods\\Linear Algebra\\Linear Algebra.csproj",
       "projectName": "Linear Algebra",
-      "projectPath": "C:\\Users\\User\\source\\repos\\Linear Algebra\\Linear Algebra.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Numeric-Methods\\Linear Algebra\\Linear Algebra.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\Linear Algebra\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Numeric-Methods\\Linear Algebra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
