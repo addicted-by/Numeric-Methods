@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\obj\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.csprojAssemblyReference.cache
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\obj\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\obj\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.AssemblyInfo.cs
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\obj\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\bin\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.exe
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\bin\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.deps.json
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\bin\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.runtimeconfig.json
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\bin\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.runtimeconfig.dev.json
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\bin\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.dll
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\bin\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.pdb
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\obj\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.dll
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\obj\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.pdb
+C:\Users\User\source\repos\NonLinearAlgebaicEquation\obj\Debug\netcoreapp3.1\NonLinearAlgebaicEquation.genruntimeconfig.cache
