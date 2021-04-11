@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\Course Work (SVD)\bin\Debug\netcoreapp3.1\Course Work (SVD).exe
+C:\Users\User\source\repos\Course Work (SVD)\bin\Debug\netcoreapp3.1\Course Work (SVD).deps.json
+C:\Users\User\source\repos\Course Work (SVD)\bin\Debug\netcoreapp3.1\Course Work (SVD).runtimeconfig.json
+C:\Users\User\source\repos\Course Work (SVD)\bin\Debug\netcoreapp3.1\Course Work (SVD).runtimeconfig.dev.json
+C:\Users\User\source\repos\Course Work (SVD)\bin\Debug\netcoreapp3.1\Course Work (SVD).dll
+C:\Users\User\source\repos\Course Work (SVD)\bin\Debug\netcoreapp3.1\Course Work (SVD).pdb
+C:\Users\User\source\repos\Course Work (SVD)\obj\Debug\netcoreapp3.1\Course Work (SVD).csprojAssemblyReference.cache
+C:\Users\User\source\repos\Course Work (SVD)\obj\Debug\netcoreapp3.1\Course Work (SVD).AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Course Work (SVD)\obj\Debug\netcoreapp3.1\Course Work (SVD).AssemblyInfo.cs
+C:\Users\User\source\repos\Course Work (SVD)\obj\Debug\netcoreapp3.1\Course Work (SVD).csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Course Work (SVD)\obj\Debug\netcoreapp3.1\Course Work (SVD).dll
+C:\Users\User\source\repos\Course Work (SVD)\obj\Debug\netcoreapp3.1\Course Work (SVD).pdb
+C:\Users\User\source\repos\Course Work (SVD)\obj\Debug\netcoreapp3.1\Course Work (SVD).genruntimeconfig.cache

@@ -751,6 +751,7 @@ namespace Linear_Algebra
                 U_k = EMatrix(3);
                 i_max = 0;
                 j_max = 1;
+                //скалярное произведение
             }
             answer.Add(a);
             answer.Add(k);
@@ -758,7 +759,23 @@ namespace Linear_Algebra
             return answer;
 
         }
-
+        public List<double> scalar()
+        {
+            List<double> solution = new List<double>();
+            Matrix A = new Matrix(_data, _Dimension);
+            for (int i = 0; i < _Dimension - 1; i++)
+            {
+                for (int j = i + 1; j < _Dimension; j++)
+                {
+                    solution.Add(0);
+                    for (int k = 0; k < _Dimension; k++)
+                    {
+                        solution[solution.Count - 1] += A[k, i] * A[k, j];
+                    }
+                }
+            }
+            return solution;
+        } 
         #endregion
         #region(Lab1.5 QR-Decomposition)
 

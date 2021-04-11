@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\Approximation Methods\bin\Debug\Approximation Methods.exe.config
+C:\Users\User\source\repos\Approximation Methods\bin\Debug\Approximation Methods.exe
+C:\Users\User\source\repos\Approximation Methods\bin\Debug\Approximation Methods.pdb
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation Methods.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation_Methods.Form1.resources
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation_Methods.Properties.Resources.resources
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation Methods.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation Methods.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation Methods.exe
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation Methods.pdb
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation_Methods.Polynomials.resources
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation_Methods.CubicSpline.resources
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation_Methods.Approximation.resources
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation_Methods.NumDer.resources
+C:\Users\User\source\repos\Approximation Methods\obj\Debug\Approximation_Methods.Integral.resources

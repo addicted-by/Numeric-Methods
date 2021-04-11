@@ -138,6 +138,11 @@ namespace Linear_Algebra
             }
             Console.WriteLine("\nIterations: " + Convert.ToString(answer[1]));
             Console.WriteLine("Eigen vectors: \n\n" + ((Matrix)answer[2]).ToString());
+            List<double> x = new List<double>();
+            x = ((Matrix)answer[2]).scalar();
+            foreach (var sol in x)
+                Console.WriteLine("Check: " + sol + " ");
+            Console.WriteLine("-------------------------------------------------\n");
         }
         #endregion
     }

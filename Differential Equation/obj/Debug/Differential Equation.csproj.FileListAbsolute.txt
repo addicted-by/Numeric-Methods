@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\Differential Equation\bin\Debug\Differential Equation.exe.config
+C:\Users\User\source\repos\Differential Equation\bin\Debug\Differential Equation.exe
+C:\Users\User\source\repos\Differential Equation\bin\Debug\Differential Equation.pdb
+C:\Users\User\source\repos\Differential Equation\obj\Debug\Differential Equation.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Differential Equation\obj\Debug\Differential_Equation.Form1.resources
+C:\Users\User\source\repos\Differential Equation\obj\Debug\Differential_Equation.Properties.Resources.resources
+C:\Users\User\source\repos\Differential Equation\obj\Debug\Differential_Equation.Solver.resources
+C:\Users\User\source\repos\Differential Equation\obj\Debug\Differential Equation.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Differential Equation\obj\Debug\Differential Equation.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Differential Equation\obj\Debug\Differential Equation.exe
+C:\Users\User\source\repos\Differential Equation\obj\Debug\Differential Equation.pdb
+C:\Users\User\source\repos\Differential Equation\obj\Debug\Differential_Equation.Boundary.resources
