@@ -238,7 +238,8 @@ namespace Linear_Algebra
 
         public Matrix Tranpose()
         {
-            Matrix answer = new Matrix(_data, Dimension);
+            Matrix answer = EMatrix(Dimension);
+            answer += this;
             double tmp;
             for (int i = 0; i < answer.Dimension; i++)
             {
@@ -939,7 +940,7 @@ namespace Linear_Algebra
             for (int i = 0; i < Dimension-1; i++)
                 if (Math.Abs(A[i + 1, i]) < min)
                     min = Math.Abs(A[i + 1, i]);
-            while (min > varepsilon / 100000000000000)
+            while (min > varepsilon / 10000)
             {
                 Matrix Q = (Matrix)A.QR()[1];
                 Matrix R = (Matrix)A.QR()[0];

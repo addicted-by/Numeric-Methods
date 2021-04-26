@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\NonLinearAlgebaicEquation\\Nonlinear Algebra.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Numeric-Methods\\NonLinearAlgebaicEquation\\Nonlinear Algebra.csproj",
       "projectName": "Nonlinear Algebra",
-      "projectPath": "C:\\Users\\User\\source\\repos\\NonLinearAlgebaicEquation\\Nonlinear Algebra.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Numeric-Methods\\NonLinearAlgebaicEquation\\Nonlinear Algebra.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\NonLinearAlgebaicEquation\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Numeric-Methods\\NonLinearAlgebaicEquation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

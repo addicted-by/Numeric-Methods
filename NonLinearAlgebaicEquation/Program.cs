@@ -115,16 +115,17 @@ namespace Nonlinear_Algebra
             return answer;
         }
         #endregion
-        static public double f1(double x1, double x2) =>
-            x1 * x1 + x2 * x2 - 4;
+        //static public double f1(double x1, double x2) =>
+        //  x1 * x1 + x2 * x2 - 4;
+        static public double f1(double x1, double x2) => x1 - Math.Cos(x2) - 1;
         static public double f2(double x1, double x2) =>
-            x1 - Math.Exp(x2) + 2;
+            10* Math.Exp(x2) - (x1 + 1) - 10*Math.Exp(2);// x1 - Math.Exp(x2) + 2;
         static public double der11(double x1, double x2) =>
-            2 * x1;
+            1;//2 * x1;
         static public double der22(double x1, double x2) =>
-            -Math.Exp(x2);
+            Math.Sin(x2);//-Math.Exp(x2);
         static public double der12(double x1, double x2) =>
-            2 * x2;
+            -1 / ((x1+1)*Math.Log(10));//2 * x2;
         static public double der21(double x1, double x2) =>
             1;
         static public double derphi_sec(double x1, double x2) => 0;
