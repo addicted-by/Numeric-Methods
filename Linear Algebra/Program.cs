@@ -61,6 +61,7 @@ namespace Linear_Algebra
             
             print.Task1_1Print(Matrix_list, RP_list, LU[0], LU[1], solution, z);
             */
+            print.Task1_1Print(Matrix_list, RP_list, LU[0], LU[1], solution, z);
             #endregion
             #region(Lab1.2)
             string[] _lines_2 = System.IO.File.ReadAllLines(@"test1.2.txt");

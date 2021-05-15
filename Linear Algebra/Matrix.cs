@@ -370,9 +370,6 @@ namespace Linear_Algebra
             L = EMatrix();
             for (int i = 0; i < _Dimension; i++)
             {
-               // U = (Matrix)U.LeaderMustBeFirst(RP)[0];
-                //RP_changed = (List<double>)U.LeaderMustBeFirst(RP)[1];
-                //sign_det *= (double)U.LeaderMustBeFirst(RP)[2];
                 M = EMatrix();
                 for (int j = i + 1; j < _Dimension; j++)
                 {
@@ -452,7 +449,6 @@ namespace Linear_Algebra
                     Inversed[j,i] = x[j];
                 }
             }
-//            for (int i = 0; i )
             return Inversed;
 
         }
@@ -520,7 +516,6 @@ namespace Linear_Algebra
         public List<object> SIM(List<double> b)
         {
             Matrix A = new Matrix(_data);
-            //добавить изменение строк, когда a[i,i] == 0
             List<object> answer = new List<object>();
             List<double> beta = new List<double>();
             Matrix alpha = new Matrix();
@@ -612,28 +607,6 @@ namespace Linear_Algebra
             Matrix B = new Matrix();
             Matrix C = new Matrix();
             List<double> beta = new List<double>();
-            /* for (int i = 0; i < _Dimension; i++)
-             {
-                 for (int j = 0; j < _Dimension; j++)
-                 {
-                     if (i == j)
-                     {
-                         C[i, j] = 0;
-                         B[i, j] = 0;
-                     }
-                     if (i > j)
-                     {
-                         B[i, j] = -A[i, j] / A[i, i];
-                         C[i, j] = 0;
-                     }
-                     if (i < j)
-                     {
-                         B[i, j] = 0;
-                         C[i, j] = -A[i, j] / A[i, i];
-                     }
-                 }
-                 beta.Add(b[i] / A[i, i]);
-             }*/
             for (int i = 0; i < _Dimension; i++)
             {
                 for (int j = 0; j < _Dimension; j++)
@@ -644,13 +617,8 @@ namespace Linear_Algebra
                         alpha[i, j] = -A[i, j] / A[i, i];
                 }
                 beta.Add(b[i] / A[i, i]);
-            }/*
-            Matrix E = EMatrix();
-            Matrix tmp = E - B;
-            Matrix tmp_inv = tmp.Inverse();
-            alpha = tmp_inv * C;
-            beta = tmp_inv.Multiply_vec(beta);
-            */double varepsilon_k = 1;
+            }
+            double varepsilon_k = 1;
             double varepsilon = 0.0001;
             List<double> x_prev = new List<double>();
             List<double> x = new List<double>();
@@ -662,7 +630,6 @@ namespace Linear_Algebra
             {
                 for (int i = 0; i < x.Count; i++)
                     x_prev.Add(x[i]);
-              //  x = this.Vecsum(beta, alpha.Multiply_vec(x));
               for (int i = 0; i < x.Count; i++)
                 {
                     x[i] = 0;
@@ -690,7 +657,7 @@ namespace Linear_Algebra
         {
             List<object> answer = new List<object>();
             Matrix U_eigen = EMatrix(n);
-            Matrix a = new Matrix(_data,n);
+            Matrix a = new Matrix(_data, n);
             Matrix a_new = a;
             int k = 0;
             int t;
@@ -700,18 +667,18 @@ namespace Linear_Algebra
                 for (int j = 0; j < a.Dimension; j++)
                 {
                     if (i != j)
-                        sum += a[i, j] * a[i, j]; 
+                        sum += a[i, j] * a[i, j];
                 }
             }
-            double varepsilon = 0.001; 
+            double varepsilon = 0.001;
             int i_max = 0, j_max = 1;
             Matrix U_k = EMatrix(3);
             while (Math.Sqrt(sum) > varepsilon)
             {
-                
-                double max = a[0,1];
-                for (int i = 0; i < a.Dimension-1; i++)
-                    for (int j = i+1; j < a.Dimension; j++)
+
+                double max = a[0, 1];
+                for (int i = 0; i < a.Dimension - 1; i++)
+                    for (int j = i + 1; j < a.Dimension; j++)
                     {
                         if (i != j)
                             if (Math.Abs(a[i, j]) > max)
@@ -726,7 +693,7 @@ namespace Linear_Algebra
                 check = Math.Atan(check) / 2;
                 if (a[i_max, i_max] == a[j_max, j_max]) phi = Math.PI / 4;
                 else phi = check;
-                
+
                 U_k[i_max, j_max] = -Math.Sin(phi);
                 U_k[j_max, i_max] = Math.Sin(phi);
                 U_k[i_max, i_max] = Math.Cos(phi);
@@ -736,7 +703,7 @@ namespace Linear_Algebra
                 tmp *= U_k;
                 Matrix tmp_1 = U_k.Tranpose();
                 a_new = tmp_1 * a;
-                a_new = a_new*tmp;
+                a_new = a_new * tmp;
                 a = a_new;
                 sum = 0;
                 for (int i = 0; i < a.Dimension; i++)
@@ -748,11 +715,10 @@ namespace Linear_Algebra
                     }
                 }
                 k++;
-                U_eigen = U_eigen *  U_k; 
+                U_eigen = U_eigen * U_k;
                 U_k = EMatrix(3);
                 i_max = 0;
                 j_max = 1;
-                //скалярное произведение
             }
             answer.Add(a);
             answer.Add(k);
@@ -760,6 +726,7 @@ namespace Linear_Algebra
             return answer;
 
         }
+
         public List<double> scalar()
         {
             List<double> solution = new List<double>();
