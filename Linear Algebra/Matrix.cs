@@ -21,16 +21,12 @@ namespace Linear_Algebra
         #endregion
 
         #region(Dimensions)
-        public int _Dimension;
-        private double[,] _data;
-        public int Dimension
+        public const int _Dimension = 4;
+        private double[,] _data = new double[_Dimension, _Dimension];
+        public static int Dimension
         {
             get => _Dimension;
-            set
-            {
-                _Dimension = value;
-            }
-            
+
         }
         #endregion
         #region(For easily use of elements)
@@ -145,30 +141,23 @@ namespace Linear_Algebra
 
         public static Matrix operator +(Matrix a, Matrix b)
         {
-            if (a.Dimension == b.Dimension)
-            {
-                int dimension = a.Dimension;
-                Matrix output = new Matrix(a.Dimension);
-                for (int i = 0; i < dimension; i++)
-                    for (int j = 0; j < dimension; j++)
-                        output[i, j] = a[i, j] + b[i, j];
-                return output;
-            }
-            else return new Matrix();
+            Matrix output = new Matrix();
+            for (int i = 0; i < _Dimension; i++)
+                for (int j = 0; j < _Dimension; j++)
+                    output[i, j] = a[i, j] + b[i, j];
+            return output;
         }
 
         public static Matrix operator ++(Matrix a)
         {
-            int dimension = a.Dimension;
-            for (int i = 0; i < dimension; i++)
+            for (int i = 0; i < _Dimension; i++)
                 a[i, i]++;
             return a;
         }
         public static Matrix operator -(Matrix a)
         {
-            int dimension = a.Dimension;
-            for (int i = 0; i < dimension; ++i)
-                for (int j = 0; j < dimension; ++j)
+            for (int i = 0; i < _Dimension; ++i)
+                for (int j = 0; j < _Dimension; ++j)
                     a[i, j] = -a[i, j];
             return a;
         }
@@ -180,32 +169,29 @@ namespace Linear_Algebra
 
         public static Matrix operator --(Matrix a)
         {
-            int dimension = a.Dimension;
-            for (int i = 0; i < dimension; i++)
+            for (int i = 0; i < _Dimension; i++)
                 a[i, i]--;
             return a;
         }
 
         public static Matrix operator *(Matrix a, Matrix b)
         {
-            int dimension = a.Dimension;
-            Matrix output = new Matrix(a.Dimension);
-            for (int k = 0; k < dimension; k++)
-                for (int i = 0; i < dimension; i++)
+            Matrix output = new Matrix();
+            for (int k = 0; k < _Dimension; k++)
+                for (int i = 0; i < _Dimension; i++)
                 {
                     output[k, i] = 0f;
-                    for (int j = 0; j < dimension; j++)
+                    for (int j = 0; j < _Dimension; j++)
                         output[k, i] += a[k, j] * b[j, i];
                 }
             return output;
         }
         public static Matrix operator *(Matrix a, double b)
         {
-            int dimension = a.Dimension;
-            Matrix output = new Matrix(a.Dimension);
-            for (int i = 0; i < dimension; i++)
+            Matrix output = new Matrix();
+            for (int i = 0; i < _Dimension; i++)
             {
-                for (int j = 0; j < dimension; j++)
+                for (int j = 0; j < _Dimension; j++)
                     output[i, j] = a[i, j] * b;
             }
             return output;
@@ -235,6 +221,7 @@ namespace Linear_Algebra
         {
             return a.Determinant < b.Determinant;
         }
+<<<<<<< HEAD
 
         public Matrix Tranpose()
         {
@@ -252,57 +239,48 @@ namespace Linear_Algebra
             }
             return answer;
         }
+=======
+>>>>>>> parent of 5f1fef0 (3-5)
         
         #endregion
         #region(Consturctors)
-        public Matrix(int _Dimension = 4, params double[] data) //[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]
+        public Matrix(params double[] data) //[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]
         {
-            this.Dimension = _Dimension;
-            this._data = new double[_Dimension, _Dimension];
-            for (int i = 0; i < _Dimension; i++)
-                for (int j = 0; j < _Dimension; j++)
-                    this[i, j] = data[j + i * _Dimension];
-            
-        }
-
-        public Matrix(List<double> data, int _Dimension = 4) //the same, but List
-        {
-            this.Dimension = _Dimension;
-            this._data = new double[_Dimension, _Dimension];
             for (int i = 0; i < _Dimension; i++)
                 for (int j = 0; j < _Dimension; j++)
                     this[i, j] = data[j + i * _Dimension];
         }
 
-        public Matrix(double[,] data, int _Dimension = 4) // {{1,0,0,0}, {0,1,0,0}, {0,0,1,0}, {0,0,0,1}}
+        public Matrix(List<double> data) //the same, but List
         {
-            this.Dimension = _Dimension;
+            for (int i = 0; i < _Dimension; i++)
+                for (int j = 0; j < _Dimension; j++)
+                    this[i, j] = data[j + i * _Dimension];
+        }
+
+        public Matrix(double[,] data) // {{1,0,0,0}, {0,1,0,0}, {0,0,1,0}, {0,0,0,1}}
+        {
             _data = data;
         }
 
-        public Matrix(double data, int _Dimension = 4) //zero matrix with non-zero diagonal
+        public Matrix(double data) //zero matrix with non-zero diagonal
         {
-            this.Dimension = _Dimension;
-            this._data = new double[_Dimension, _Dimension];
             for (int i = 0; i < _Dimension; i++)
                 for (int j = 0; j < _Dimension; j++)
                     this[i, j] = (i == j) ? data : 0;
         }
 
-        public Matrix(int _Dimension = 4) //zero matrix
+        public Matrix() //zero matrix
         {
-            this.Dimension = _Dimension;
-            this._data = new double[_Dimension, _Dimension];
             for (int i = 0; i < _Dimension; i++)
                 for (int j = 0; j < _Dimension; j++)
                     this[i, j] = 0;
         }
         #endregion
         #region(Identity matrix)
-        public static Matrix EMatrix(int _Dimension = 4)
+        public static Matrix EMatrix()
         {
-            Matrix output = new Matrix(_Dimension);
-            
+            Matrix output = new Matrix();
             for (int i = 0; i < _Dimension; i++)
                 output[i, i] = 1;
             return output;
@@ -454,6 +432,7 @@ namespace Linear_Algebra
         }
         #endregion
         #endregion
+<<<<<<< HEAD
 
         #region (Lab1.3 Solving SLAE (Simple and Zeidel))
 
@@ -948,5 +927,8 @@ namespace Linear_Algebra
         }
         #endregion
 
+=======
+        
+>>>>>>> parent of 5f1fef0 (3-5)
     }
 }

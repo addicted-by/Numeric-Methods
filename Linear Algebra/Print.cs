@@ -10,7 +10,7 @@ namespace Linear_Algebra
         public void Task1_1Print(List<double> Matrix_list, List<double> RP_list, Matrix L, Matrix U, List<double> solution, double det)
         {
             int i = 1, j = 0;
-            Console.WriteLine("Lab1. Solving SLAE with LU decomposition" + "\n -----------------------");
+            Console.WriteLine("Solving SLAE with LU decomposition" + "\n -----------------------");
             Console.WriteLine("System of Linear Equations" + "\n -----------------------");
 
             foreach (double x in Matrix_list)
@@ -48,7 +48,7 @@ namespace Linear_Algebra
         public void Task1_2Print(List<double> a, List<double> b, List<double> c, List<double> d, List<double> solution)
         {
             int i = 1;
-            Console.WriteLine("\nLab 2. Tridiagonal Matrix Algorithm" + "\n -----------------------");
+            Console.WriteLine("\nTridiagonal Matrix Algorithm" + "\n -----------------------");
             foreach (double x in a)
             {
                 Console.Write("a" + Convert.ToString(i) + " = " + Convert.ToString(x) + " ");
@@ -85,6 +85,7 @@ namespace Linear_Algebra
             }
         }
         #endregion
+<<<<<<< HEAD
         #region(Write 1.3 Task)
 
         public void Task1_3Print(List<double> Matrix_list, List<double> RP_list, List<double> answer1, int count1, List<double> answer2, int count2)
@@ -145,5 +146,7 @@ namespace Linear_Algebra
             Console.WriteLine("-------------------------------------------------\n");
         }
         #endregion
+=======
+>>>>>>> parent of 5f1fef0 (3-5)
     }
 }
