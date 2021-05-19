@@ -4,7 +4,8 @@
 -------
 Labs and Course Work Numeric Methods
 
-Labs
+[Labs](https://github.com/addicted-by/Numeric-Methods/blob/main/Reports/Numeric_Methods__Labs_.pdf)
+
 -------
 # 1. Linear Algebra
 
@@ -32,16 +33,16 @@ Labs
 
 3.3 Least squares method (approximation polynomials first and second degree's)
 
-3.4 Numerical derivation (have not done yet)
+3.4 Numerical derivation (Newton polynom's derivation)
 
 3.5 Numerical integration (rectangle, trapeze and Simpson methods)
 
 # 4. Differential equations 
 
-4.1 Cauchy problem of ODE solution (Euler, Runge-Kutta, Adams) - haven't done yet
+4.1 Cauchy problem of ODE solution (Euler, Runge-Kutta, Adams)
 
-4.2 Boundary value problem solution (shooting and finite methods) - haven't done yet
+4.2 Boundary value problem solution (shooting and finite methods)
 
-# Course Work:
+# [Course Work](https://github.com/addicted-by/Numeric-Methods/blob/main/Reports/Numeric_Methods__CP.pdf)
 
 Singular value decomposition
