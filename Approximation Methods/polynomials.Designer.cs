@@ -199,7 +199,7 @@ namespace Approximation_Methods
             // 
             this.Lagrange_label.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Lagrange_label.AutoSize = true;
-            this.Lagrange_label.Location = new System.Drawing.Point(0, 295);
+            this.Lagrange_label.Location = new System.Drawing.Point(0, 300);
             this.Lagrange_label.Name = "Lagrange_label";
             this.Lagrange_label.Size = new System.Drawing.Size(48, 17);
             this.Lagrange_label.TabIndex = 16;
@@ -209,7 +209,7 @@ namespace Approximation_Methods
             // lagrange
             // 
             this.lagrange.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lagrange.Location = new System.Drawing.Point(47, 292);
+            this.lagrange.Location = new System.Drawing.Point(47, 297);
             this.lagrange.Name = "lagrange";
             this.lagrange.Size = new System.Drawing.Size(393, 22);
             this.lagrange.TabIndex = 17;
@@ -218,7 +218,7 @@ namespace Approximation_Methods
             // newton
             // 
             this.newton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.newton.Location = new System.Drawing.Point(47, 320);
+            this.newton.Location = new System.Drawing.Point(47, 325);
             this.newton.Name = "newton";
             this.newton.Size = new System.Drawing.Size(393, 22);
             this.newton.TabIndex = 19;
@@ -228,7 +228,7 @@ namespace Approximation_Methods
             // 
             this.Newton_label.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Newton_label.AutoSize = true;
-            this.Newton_label.Location = new System.Drawing.Point(0, 323);
+            this.Newton_label.Location = new System.Drawing.Point(0, 328);
             this.Newton_label.Name = "Newton_label";
             this.Newton_label.Size = new System.Drawing.Size(49, 17);
             this.Newton_label.TabIndex = 18;
@@ -258,6 +258,7 @@ namespace Approximation_Methods
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(0, 377);
             this.label5.Name = "label5";
@@ -266,6 +267,7 @@ namespace Approximation_Methods
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(0, 356);
             this.label7.Name = "label7";

@@ -29,9 +29,9 @@ namespace Differential_Equation
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,10 +41,12 @@ namespace Differential_Equation
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.eu = new System.Windows.Forms.CheckBox();
-            this.rk = new System.Windows.Forms.CheckBox();
-            this.ad = new System.Windows.Forms.CheckBox();
             this.fun = new System.Windows.Forms.CheckBox();
+            this.ad = new System.Windows.Forms.CheckBox();
+            this.rk = new System.Windows.Forms.CheckBox();
+            this.eu = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -55,17 +57,17 @@ namespace Differential_Equation
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
-            this.chart1.Location = new System.Drawing.Point(3, 0);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(3, 12);
             this.chart1.Name = "chart1";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
-            this.chart1.Size = new System.Drawing.Size(795, 300);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(795, 289);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -73,7 +75,7 @@ namespace Differential_Equation
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 356);
+            this.label1.Location = new System.Drawing.Point(9, 368);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 17);
             this.label1.TabIndex = 1;
@@ -83,7 +85,7 @@ namespace Differential_Equation
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 344);
+            this.label2.Location = new System.Drawing.Point(113, 356);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 17);
             this.label2.TabIndex = 2;
@@ -93,7 +95,7 @@ namespace Differential_Equation
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(116, 371);
+            this.label3.Location = new System.Drawing.Point(113, 383);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 17);
             this.label3.TabIndex = 3;
@@ -103,7 +105,7 @@ namespace Differential_Equation
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox1.Image = global::Differential_Equation.Properties.Resources.CodeCogsEqn__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 306);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 318);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(218, 33);
             this.pictureBox1.TabIndex = 4;
@@ -112,7 +114,7 @@ namespace Differential_Equation
             // h_data
             // 
             this.h_data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.h_data.Location = new System.Drawing.Point(44, 354);
+            this.h_data.Location = new System.Drawing.Point(41, 366);
             this.h_data.Name = "h_data";
             this.h_data.Size = new System.Drawing.Size(32, 22);
             this.h_data.TabIndex = 5;
@@ -121,7 +123,7 @@ namespace Differential_Equation
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox2.Location = new System.Drawing.Point(166, 342);
+            this.textBox2.Location = new System.Drawing.Point(163, 354);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(26, 22);
             this.textBox2.TabIndex = 6;
@@ -130,7 +132,7 @@ namespace Differential_Equation
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox3.Location = new System.Drawing.Point(166, 365);
+            this.textBox3.Location = new System.Drawing.Point(163, 377);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(26, 22);
             this.textBox3.TabIndex = 7;
@@ -147,39 +149,6 @@ namespace Differential_Equation
             this.panel1.Size = new System.Drawing.Size(338, 81);
             this.panel1.TabIndex = 8;
             // 
-            // eu
-            // 
-            this.eu.AutoSize = true;
-            this.eu.Location = new System.Drawing.Point(13, 10);
-            this.eu.Name = "eu";
-            this.eu.Size = new System.Drawing.Size(63, 21);
-            this.eu.TabIndex = 0;
-            this.eu.Text = "Euler";
-            this.eu.UseVisualStyleBackColor = true;
-            this.eu.CheckedChanged += new System.EventHandler(this.eu_CheckedChanged);
-            // 
-            // rk
-            // 
-            this.rk.AutoSize = true;
-            this.rk.Location = new System.Drawing.Point(221, 10);
-            this.rk.Name = "rk";
-            this.rk.Size = new System.Drawing.Size(110, 21);
-            this.rk.TabIndex = 1;
-            this.rk.Text = "Runge-Kutta";
-            this.rk.UseVisualStyleBackColor = true;
-            this.rk.CheckedChanged += new System.EventHandler(this.rk_CheckedChanged);
-            // 
-            // ad
-            // 
-            this.ad.AutoSize = true;
-            this.ad.Location = new System.Drawing.Point(13, 35);
-            this.ad.Name = "ad";
-            this.ad.Size = new System.Drawing.Size(73, 21);
-            this.ad.TabIndex = 2;
-            this.ad.Text = "Adams";
-            this.ad.UseVisualStyleBackColor = true;
-            this.ad.CheckedChanged += new System.EventHandler(this.ad_CheckedChanged);
-            // 
             // fun
             // 
             this.fun.AutoSize = true;
@@ -193,11 +162,69 @@ namespace Differential_Equation
             this.fun.UseVisualStyleBackColor = true;
             this.fun.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
+            // ad
+            // 
+            this.ad.AutoSize = true;
+            this.ad.Location = new System.Drawing.Point(13, 35);
+            this.ad.Name = "ad";
+            this.ad.Size = new System.Drawing.Size(73, 21);
+            this.ad.TabIndex = 2;
+            this.ad.Text = "Adams";
+            this.ad.UseVisualStyleBackColor = true;
+            this.ad.CheckedChanged += new System.EventHandler(this.ad_CheckedChanged);
+            // 
+            // rk
+            // 
+            this.rk.AutoSize = true;
+            this.rk.Location = new System.Drawing.Point(221, 10);
+            this.rk.Name = "rk";
+            this.rk.Size = new System.Drawing.Size(110, 21);
+            this.rk.TabIndex = 1;
+            this.rk.Text = "Runge-Kutta";
+            this.rk.UseVisualStyleBackColor = true;
+            this.rk.CheckedChanged += new System.EventHandler(this.rk_CheckedChanged);
+            // 
+            // eu
+            // 
+            this.eu.AutoSize = true;
+            this.eu.Location = new System.Drawing.Point(13, 10);
+            this.eu.Name = "eu";
+            this.eu.Size = new System.Drawing.Size(63, 21);
+            this.eu.TabIndex = 0;
+            this.eu.Text = "Euler";
+            this.eu.UseVisualStyleBackColor = true;
+            this.eu.CheckedChanged += new System.EventHandler(this.eu_CheckedChanged);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.Location = new System.Drawing.Point(260, 343);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 33);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Resolve";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.richTextBox1.ForeColor = System.Drawing.Color.LawnGreen;
+            this.richTextBox1.Location = new System.Drawing.Point(12, 410);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(786, 134);
+            this.richTextBox1.TabIndex = 10;
+            this.richTextBox1.Text = "";
+            // 
             // Solver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 398);
+            this.ClientSize = new System.Drawing.Size(800, 556);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -234,5 +261,7 @@ namespace Differential_Equation
         private System.Windows.Forms.CheckBox ad;
         private System.Windows.Forms.CheckBox rk;
         private System.Windows.Forms.CheckBox eu;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
